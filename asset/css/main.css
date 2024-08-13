@@ -339,7 +339,7 @@ header {
 .input-feild {
   border: 2px solid var(--parymary-color);
   margin: 1.5rem 0;
-  max-width: 90%;
+  max-width: 95%;
 }
 .input-feild input {
   outline: none;
@@ -382,7 +382,7 @@ header {
 
 .Login button {
   background: #84bef8;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #000;
   font-weight: 600;
   padding: 16px 35px;
@@ -416,7 +416,7 @@ header {
 .checkAuth {
   display: flex;
   font-size: 1.3rem;
-  max-width: 75%;
+  max-width: 98%;
   margin: auto;
   margin-bottom: 1.5rem;
   gap: 10px;
@@ -430,12 +430,12 @@ header {
 }
 
 .checkAuth input {
-  margin-top: 10px;
+  margin-top: 5px;
   cursor: pointer;
 }
 .checkAuth label {
   color: var(--parymary-color);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* footer */
@@ -528,7 +528,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  padding: 3rem 0;
 }
 
 .info-page {
@@ -632,12 +632,12 @@ footer {
 .product-info-wrapper {
   background-color: #e3f0fd;
   border-radius: 15px;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .large-image {
   max-width: 490px;
-  height: 400px;
+  height: 220px;
 }
 .large-image img {
   width: 100%;
@@ -646,16 +646,15 @@ footer {
 
 .product-info-content {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 .product-info-right-content {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .img-slide {
   max-width: 90px;
   display: block;
-  height: 90px;
+  height: 70px;
   object-fit: cover;
 }
 .img-slide img {
@@ -669,14 +668,14 @@ footer {
 }
 
 .product-info-right-content .title h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: #004aad;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
 .product-info-rattings h6 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #626b75;
   font-weight: 400;
 }
@@ -695,13 +694,13 @@ footer {
   text-align: center;
   padding: 12px;
   color: #058849;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-top: 2rem;
 }
 .Quantity h5 {
   color: #626b75;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -709,6 +708,7 @@ footer {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  align-items: center;
 }
 .Quantity > div {
   display: flex;
@@ -718,8 +718,11 @@ footer {
   background-color: var(--parymary-color);
   outline: none;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.7rem;
   color: #626b75;
 }
@@ -729,12 +732,12 @@ footer {
   height: 40px;
   color: #626b75;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 .buyNow {
   margin-top: 2rem;
-  text-align: end;
+  text-align: start;
 }
 
 .buyNow button {
@@ -743,8 +746,8 @@ footer {
   color: #fff;
   outline: none;
   border: none;
-  padding: 15px 40px;
-  font-size: 1.5rem;
+  padding: 12px 30px;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 360px) {
@@ -886,6 +889,110 @@ footer {
     align-items: center;
     gap: 1rem;
   }
+
+  /* .product-info-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+  } */
+  .product-info-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  .large-image {
+    max-width: 376px;
+    height: 370px;
+  }
+
+  .img-slide {
+    max-width: 90px;
+    display: block;
+    height: 63px;
+    object-fit: cover;
+  }
+
+  .product-info-right-content {
+    margin-top: 3rem;
+  }
+  .product-info-right-content .title h3 {
+    font-size: 1.3rem;
+    color: #004aad;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .product-info-rattings h6 {
+    font-size: 1.1rem;
+    color: #626b75;
+    font-weight: 400;
+  }
+
+  .product-info-rattings .price h5 {
+    background-color: #dcf3e8;
+    width: 13rem;
+    text-align: center;
+    padding: 12px;
+    color: #058849;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .Quantity h5 {
+    color: #626b75;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .control-increment button {
+    background-color: var(--parymary-color);
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 1.7rem;
+    color: #626b75;
+  }
+  .product-info-rattings h6 {
+    font-size: 1.3rem;
+    color: #626b75;
+    font-weight: 400;
+  }
+
+  .buyNow {
+    margin-top: 3rem;
+    text-align: end;
+  }
+
+  .buyNow button {
+    background: #38b6ff;
+    font-weight: 700;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+
+  .control-increment p {
+    width: 40px;
+    height: 40px;
+    color: #626b75;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  .checkAuth {
+    display: flex;
+    font-size: 1.3rem;
+    max-width: 57%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -955,6 +1062,31 @@ footer {
     align-items: center;
     gap: 1rem;
   }
+
+  .product-info-wrapper {
+    background-color: #e3f0fd;
+    border-radius: 15px;
+    padding: 2rem;
+  }
+
+  .product-info-page {
+    background: url('../image/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 0;
+    height: 100vh;
+  }
+  .product-info-right-content {
+    margin-top: 0rem;
+  }
+
+  /* 
+  .product-info-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1074,7 +1206,7 @@ footer {
 
   .Login,
   .login-page-header {
-    max-width: 45%;
+    max-width: 70%;
     margin: auto;
   }
 
@@ -1180,8 +1312,126 @@ footer {
     font-size: 1.3rem;
   }
 
+  .product-info-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
   .product-info-right-content {
     margin-top: 1rem;
+  }
+
+  .product-info-page {
+    background: url('../image/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 0;
+    height: 90vh;
+  }
+
+  .large-image {
+    max-width: 490px;
+    height: 400px;
+  }
+
+  .img-slide {
+    max-width: 90px;
+    display: block;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  .product-info-right-content {
+    margin-top: 1rem;
+  }
+  .product-info-right-content .title h3 {
+    font-size: 2rem;
+    color: #004aad;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .product-info-rattings h6 {
+    font-size: 1.6rem;
+    color: #626b75;
+    font-weight: 400;
+  }
+
+  .product-info-rattings .price h5 {
+    background-color: #dcf3e8;
+    width: 13rem;
+    text-align: center;
+    padding: 12px;
+    color: #058849;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .Quantity h5 {
+    color: #626b75;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .control-increment button {
+    background-color: var(--parymary-color);
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+    color: #626b75;
+  }
+  .product-info-rattings h6 {
+    font-size: 1.6rem;
+    color: #626b75;
+    font-weight: 400;
+  }
+
+  .buyNow {
+    margin-top: 2rem;
+    text-align: end;
+  }
+
+  .buyNow button {
+    background: #38b6ff;
+    font-weight: 700;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+  }
+
+  .control-increment p {
+    width: 40px;
+    height: 40px;
+    color: #626b75;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  .checkAuth {
+    display: flex;
+    font-size: 1.3rem;
+    max-width: 76%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+  }
+  .Login button {
+    background: #84bef8;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 600;
+    padding: 16px 35px;
+    outline: none;
+    border: none;
+    margin-left: 12%;
   }
 }
 
@@ -1253,7 +1503,39 @@ footer {
     gap: 1rem;
   }
 
+  .Login,
+  .login-page-header {
+    max-width: 45%;
+    margin: auto;
+  }
+
   .product-info-right-content {
     margin-top: 3rem;
+  }
+
+  .product-info-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+  }
+
+  .product-info-page {
+    background: url('../image/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 0;
+    height: 100vh;
+  }
+
+  .product-info-wrapper {
+    background-color: #e3f0fd;
+    border-radius: 15px;
+    padding: 3rem;
+  }
+
+  .checkAuth label {
+    color: var(--parymary-color);
+    font-size: 1.3rem;
   }
 }
