@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS in Bootstrap -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/slick.css" />
+    <link rel="stylesheet" href="asset/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="product-info-page">
+        <div class="info-page">
+          <div class="container">
+            <div class="product-info-wrapper">
+              <div class="product-info-content">
+                <div class="image-content">
+                  <div class="large-image">
+                    <img src="asset/image/shoes.jpg" alt="product" />
+                  </div>
+                  <div class="product-img-slide">
+                    <a href="#" class="img-slide">
+                      <img src="asset/image/images.jpeg" alt="" />
+                    </a>
+                    <a href="#" class="img-slide">
+                      <img src="asset/image/product.jpg" alt="" />
+                    </a>
+                    <a href="#" class="img-slide">
+                      <img src="asset/image/images.jpeg" alt="" />
+                    </a>
+                    <a href="#" class="img-slide">
+                      <img src="asset/image/images.jpeg" alt="" />
+                    </a>
+                    <a href="#" class="img-slide">
+                      <img src="asset/image/shoes.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-info-right-content">
+                  <div class="title">
+                    <h3>ফুল লেদার স্মার্ট ম্যান সুজ</h3>
+                  </div>
+                  <div class="product-info-rattings">
+                    <h6>Rattings</h6>
+                    <div class="start-ratting">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <div class="brand">
+                      <h6>Brand : Tread soft</h6>
+                    </div>
+                    <div class="price">
+                      <h5>১৯৮৫ টাকা</h5>
+                    </div>
+                    <div class="Quantity">
+                      <h5>Quantity</h5>
+                      <div class="control-increment">
+                        <button class="decremennt">-</button>
+                        <p>1</p>
+                        <button class="increment">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyNow">
+                    <button>ক্রয় করুন</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/Jquary.js"></script>
+    <script src="asset/js/slick.min.js"></script>
+    <script>
+      // image slide
+
+      const smImageSlide = document.querySelectorAll('.img-slide img');
+      const largeImgElement = document.querySelector('.large-image img');
+
+      let count = 1;
+      const countElement = document.querySelector('.control-increment p');
+      const incrementBtn = document.querySelector('.increment');
+      const DeccrementBtn = document.querySelector('.decremennt');
+      countElement.innerText = count;
+
+      // increment count
+      const increment = () => {
+        if (count === 1) {
+          count++;
+        } else {
+          return;
+        }
+      };
+      const Decrement = () => {
+        if (count < 1) {
+          return count--;
+        } else if (count === 1) {
+          return;
+        }
+      };
+
+      incrementBtn.addEventListener('click', () => {
+        count++;
+        countElement.innerText = count;
+      });
+
+      DeccrementBtn.addEventListener('click', () => {
+        if (count === 1) {
+          return;
+        }
+        count--;
+        countElement.innerText = count;
+      });
+
+      // image Slide
+
+      smImageSlide.forEach((imgElement) => {
+        imgElement.addEventListener('click', (e) => {
+          e.preventDefault();
+          const imageSrcAttribute = e.target.getAttribute('src');
+          largeImgElement.setAttribute('src', imageSrcAttribute);
+        });
+      });
+    </script>
+  </body>
+</html>
