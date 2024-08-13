@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
 header {
   position: absolute;
   top: 0;
@@ -1246,7 +1249,7 @@ footer {
 
   .check-card {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
     gap: 1rem;
   }
