@@ -102,7 +102,20 @@
           </form>
         </div>
         <div class="banner-content container">
-          <img src="asset/image/Banner.png" alt="" />
+          <div class="banner-slide">
+            <div>
+              <img src="asset/image/Banner.png" alt="" />
+            </div>
+            <div>
+              <img src="asset/image/Banner.png" alt="" />
+            </div>
+            <div>
+              <img src="asset/image/Banner.png" alt="" />
+            </div>
+            <div>
+              <img src="asset/image/Banner.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <!--  BannerSection -->
@@ -233,7 +246,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -256,7 +269,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -279,7 +292,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -302,7 +315,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -325,7 +338,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -348,7 +361,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -371,7 +384,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -394,7 +407,7 @@
                     <h5>৪৩০ টাকা</h5>
                   </div>
                   <div class="bynow">
-                    <a href="#">কিনুন</a>
+                    <a href="productInfo.html">কিনুন</a>
                   </div>
                 </div>
               </div>
@@ -442,7 +455,7 @@
     <!-- Footer -->
 
     <footer>
-      <div class="footer-content"></div>
+      <!-- <div class="footer-content"></div> -->
       <div class="footer-wrapper">
         <div class="container">
           <div class="row">
@@ -538,8 +551,25 @@
             '<button class="slick-next"><i class="bx bx-chevron-right" ></i></button>',
         });
       };
+
+      const BannerSlide = (className, slideShow) => {
+        return $(`.${className}`).slick({
+          infinite: true,
+          speed: 300,
+          centerPadding: '100px',
+          slidesToShow: slideShow,
+          slidesToScroll: 1,
+          arrows: false,
+          prevArrow:
+            '<button class="slick-prev"><i class="bx bx-chevron-left"></i></button>',
+          nextArrow:
+            '<button class="slick-next"><i class="bx bx-chevron-right" ></i></button>',
+        });
+      };
+
       sliderFun('responsive', 4, 3);
       sliderFun('Product-cardSlider', 3, 2);
+      BannerSlide('banner-slide', 1);
     </script>
   </body>
 </html>

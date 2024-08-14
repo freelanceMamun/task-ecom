@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 body {
@@ -273,7 +276,7 @@ header {
 }
 
 .outlook-card {
-  background-color: var(--color);
+  background-color: #e7f3ffcf;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -444,11 +447,9 @@ header {
 /* footer */
 
 footer {
-  background: url('../image/bg-img.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 5rem;
 }
 .footer-nav {
   display: flex;
@@ -633,7 +634,7 @@ footer {
 }
 
 .product-info-wrapper {
-  background-color: #e3f0fd;
+  background: rgb(164 198 233 / 36%);
   border-radius: 15px;
   padding: 1rem;
 }
@@ -1067,7 +1068,7 @@ footer {
   }
 
   .product-info-wrapper {
-    background-color: #e3f0fd;
+    background: rgb(164 198 233 / 36%);
     border-radius: 15px;
     padding: 2rem;
   }
@@ -1464,7 +1465,7 @@ footer {
     font-weight: 700;
     z-index: 9;
     color: #000;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .slick-next {
@@ -1532,7 +1533,7 @@ footer {
   }
 
   .product-info-wrapper {
-    background-color: #e3f0fd;
+    background: rgb(164 198 233 / 36%);
     border-radius: 15px;
     padding: 3rem;
   }
@@ -1540,5 +1541,10 @@ footer {
   .checkAuth label {
     color: var(--parymary-color);
     font-size: 1.3rem;
+  }
+
+  .nav-menuitems a {
+    font-size: 1.2rem;
+    color: #000;
   }
 }
