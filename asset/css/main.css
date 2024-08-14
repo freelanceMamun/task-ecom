@@ -62,15 +62,24 @@ header {
   justify-content: end;
   gap: 1.3rem;
 }
-.nav-auth button {
-  font-size: 1rem;
+
+.nav-auth button a {
+  font-size: 1.2rem;
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   outline: none;
   border: none;
   padding: 10px 10px;
   border-radius: 11px;
   width: 8rem;
+  display: block;
+  border: none;
+}
+
+.nav-auth button {
+  outline: none;
+  border: none;
+  border-radius: 11px;
 }
 .nav-auth button:nth-child(2) {
   background: var(--color);
