@@ -752,11 +752,15 @@ footer {
   margin-top: 2rem;
   text-align: start;
 }
-.buyNow button a {
+
+.buyNow a {
   color: #fff;
+  display: block;
+  width: max-content;
+  margin-left: auto;
 }
 
-.buyNow button {
+.buyNow a {
   background: #38b6ff;
   font-weight: 700;
   color: #fff;
@@ -982,7 +986,7 @@ footer {
     text-align: end;
   }
 
-  .buyNow button {
+  .buyNow a {
     background: #38b6ff;
     font-weight: 700;
     color: #fff;
@@ -1412,7 +1416,7 @@ footer {
     text-align: end;
   }
 
-  .buyNow button {
+  .buyNow a {
     background: #38b6ff;
     font-weight: 700;
     color: #fff;
