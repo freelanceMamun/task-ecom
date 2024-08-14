@@ -4,13 +4,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: HindSiliguri;
   font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+@font-face {
+  font-family: HindSiliguri;
+  src: url('../font/HindSiliguri-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Hind-Siliguri';
+  src: url('../font/HindSiliguri-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Hind-Siliguri';
+  src: url('../font/HindSiliguri-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Hind-Siliguri';
+  src: url('../font/HindSiliguri-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Hind-Siliguri';
+  src: url('../font/HindSiliguri-Regular.ttf');
 }
 
 body {
   font-size: 62.5%;
   overflow-x: hidden;
-  font-family: 'Hind Siliguri';
+  font-family: HindSiliguri;
+  font-family: 'Hind Siliguri', sans-serif !important;
 }
 
 a {
