@@ -5,31 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: HindSiliguri;
-  font-family: 'Hind Siliguri', sans-serif !important;
-}
-
-@font-face {
-  font-family: HindSiliguri;
-  src: url('../font/HindSiliguri-Regular.ttf');
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 @font-face {
   font-family: 'Hind-Siliguri';
   src: url('../font/HindSiliguri-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Hind-Siliguri';
-  src: url('../font/HindSiliguri-Light.ttf');
-}
-
-@font-face {
-  font-family: 'Hind-Siliguri';
-  src: url('../font/HindSiliguri-SemiBold.ttf');
-}
-@font-face {
-  font-family: 'Hind-Siliguri';
-  src: url('../font/HindSiliguri-Regular.ttf');
 }
 
 body {
@@ -74,6 +55,7 @@ header {
 .nav-menuitems a {
   font-size: 1rem;
   color: #000;
+  font-weight: 700;
 }
 
 .nav-auth {
