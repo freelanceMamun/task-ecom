@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Hind Siliguri', sans-serif !important;
 }
 
 body {
   font-size: 62.5%;
   overflow-x: hidden;
+  font-family: 'Hind Siliguri';
 }
 
 a {
@@ -547,7 +548,7 @@ footer {
 }
 
 .check-wrapper {
-  background-color: #e3f0fd;
+  background: rgb(164 198 233 / 36%);
   border-radius: 15px;
   padding: 1rem;
 }
@@ -742,6 +743,9 @@ footer {
 .buyNow {
   margin-top: 2rem;
   text-align: start;
+}
+.buyNow button a {
+  color: #fff;
 }
 
 .buyNow button {
@@ -1256,7 +1260,7 @@ footer {
   }
 
   .check-wrapper {
-    background-color: #e3f0fd;
+    background: rgb(164 198 233 / 36%);
     border-radius: 15px;
     padding: 3rem;
   }
