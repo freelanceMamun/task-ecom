@@ -1437,6 +1437,14 @@ footer {
     border: none;
     margin-left: 12%;
   }
+
+  .title-top h2 {
+    position: relative;
+    font-weight: 700;
+    z-index: 9;
+    color: #000;
+    font-size: 1.8rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
